@@ -1,0 +1,37 @@
+<html>
+	<head>
+		<title>
+			DB app Django
+		</title>
+		{% load staticfiles %}
+		<link rel="stylesheet" type="text/css" href="{% static "css/styles.css" %}">
+	</head>
+	<body>
+		<div id='container'>
+			<div class='signup'>
+				<form>
+					<input type='text' placeholder='Name:'  />
+					<input type='text' placeholder='Address:'  />
+					<input type='text' placeholder='Phone:'  />
+					<input type='text' placeholder='Email:'  />
+					<label>Upload your recent photograph!</label>
+					<input type='file' />
+					<input type='submit' placeholder='SUBMIT' />
+			 	</form>
+			</div>
+			<div class='whysign'>
+				<h1>Insert in DB</h1>
+				<p>
+					I've used a sample template for CSS from some random website.
+					The background is also from some random website.
+				</p>
+				<a href = "/basics/entries/" target="blank">
+					<span>Show Entries</span>
+				</a>
+				<a href = "#" target="blank">
+					<span>Source at Github</span>
+				</a>
+			</div>
+		</div>
+	</body>
+</html>

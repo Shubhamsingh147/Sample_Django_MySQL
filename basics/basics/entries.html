@@ -1,0 +1,16 @@
+<html>
+    <title>
+	What a pity! Even this works!
+    </title>
+    <body>
+        {% if entries %}
+    	    <ul>
+    	    {% for user in entries %}
+        	<li><a href="/basics/entries/">{{user.name}}</a></li>
+            {% endfor %}
+    	    </ul>
+	{% else %}
+    	    <p>No users are available.</p>
+	{% endif %}
+    </body>
+</html>
